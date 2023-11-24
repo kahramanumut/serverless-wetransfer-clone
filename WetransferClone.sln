@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7A333204-9416-44F2-AF3C-16C3A819EF73}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E033F4A7-256E-4F13-AB2B-230BE2869064}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infra", "infra", "{8ADA8EFC-1DE6-470A-8449-F4E1F0C8DD57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WetransfersClone.Infra", "infra\WetransfersClone.Infra\WetransfersClone.Infra.csproj", "{E018E4DA-35D8-4C3C-8E1F-C5B0C7EE048F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WetransferClone.UploadLambda", "src\WetransferClone.UploadLambda\WetransferClone.UploadLambda.csproj", "{D10A5849-2105-423F-B80E-1925803FB3D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WetransferClone.EmailLambda", "src\WetransferClone.EmailLambda\WetransferClone.EmailLambda.csproj", "{CFB30C34-990E-4106-AED0-5F3E747B176D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WetransferClone.Core", "src\WetransferClone.Core\WetransferClone.Core.csproj", "{E8A02C56-06A9-4CDB-85B4-AE599259A0B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E018E4DA-35D8-4C3C-8E1F-C5B0C7EE048F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E018E4DA-35D8-4C3C-8E1F-C5B0C7EE048F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E018E4DA-35D8-4C3C-8E1F-C5B0C7EE048F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E018E4DA-35D8-4C3C-8E1F-C5B0C7EE048F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D10A5849-2105-423F-B80E-1925803FB3D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D10A5849-2105-423F-B80E-1925803FB3D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D10A5849-2105-423F-B80E-1925803FB3D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D10A5849-2105-423F-B80E-1925803FB3D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFB30C34-990E-4106-AED0-5F3E747B176D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFB30C34-990E-4106-AED0-5F3E747B176D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFB30C34-990E-4106-AED0-5F3E747B176D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFB30C34-990E-4106-AED0-5F3E747B176D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8A02C56-06A9-4CDB-85B4-AE599259A0B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8A02C56-06A9-4CDB-85B4-AE599259A0B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8A02C56-06A9-4CDB-85B4-AE599259A0B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8A02C56-06A9-4CDB-85B4-AE599259A0B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E018E4DA-35D8-4C3C-8E1F-C5B0C7EE048F} = {8ADA8EFC-1DE6-470A-8449-F4E1F0C8DD57}
+		{D10A5849-2105-423F-B80E-1925803FB3D9} = {E033F4A7-256E-4F13-AB2B-230BE2869064}
+		{CFB30C34-990E-4106-AED0-5F3E747B176D} = {E033F4A7-256E-4F13-AB2B-230BE2869064}
+		{E8A02C56-06A9-4CDB-85B4-AE599259A0B8} = {E033F4A7-256E-4F13-AB2B-230BE2869064}
+	EndGlobalSection
+EndGlobal
