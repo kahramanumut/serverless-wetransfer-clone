@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "373ae418-649e-45cf-98a4-3c07b5819a61",
+		"name": "WeTransferClone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3704341"
+	},
+	"item": [
+		{
+			"name": "Upload Request",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"FileName\": \"Untitled-2.html\",\n    \"ReceiverEmail\": \"hopehero3@hotmail.com\",\n    \"SenderEmail\": \"kahraman.umut@hotmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://etovbxt3xel5ez7hojojypyhwu0wsgzm.lambda-url.eu-central-1.on.aws/",
+					"protocol": "https",
+					"host": [
+						"etovbxt3xel5ez7hojojypyhwu0wsgzm",
+						"lambda-url",
+						"eu-central-1",
+						"on",
+						"aws"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload File",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-Amz-Meta-receiver-email",
+						"value": "hopehero3@hotmail.com",
+						"type": "text"
+					},
+					{
+						"key": "X-Amz-Meta-sender-email",
+						"value": "kahraman.umut@hotmail.com",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": "/Users/umutkahraman/Documents/40b29137-69ec-4f1b-bfd6-8791c42e63daUntitled-2.html"
+					}
+				},
+				"url": {
+					"raw": "https://wetransfer-clone-temp.s3.eu-central-1.amazonaws.com/A715600D-A992-42FF-B692-6AB3D253B011Untitled-2.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-SignedHeaders=host%3Bx-amz-meta-receiver-email%3Bx-amz-meta-sender-email&X-Amz-Expires=899&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEL3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJHMEUCIFEboOudyPp4uoVsj6a5DXF05fLUUGivhRznLuNQF6HFAiEApdtJCpfkvNP%2BbGBhTIENkEnmui2A2q8M7vELspIDf6Uq1gMIFhAAGgw4NTc1ODc0MDAxNzEiDKmwqK%2Fy1Gd3mloqmyqzA5pjkPekti1IWwwmf%2BiJTCnfGdbGRZVswNmLHV6ZwLXGN23FRAefsy3AEj7gOA1qSw1BUcrxZXZm8ji68H2XR9bdRTk%2Bfl7u730S4ni5SXuZlQMbqZDmhtyzg8TBE20pFgOfmBLTZpoRBpe8zRY5qYoy4jky5XRjqEtHQrId%2BxDwC1uoDB5HfbpldyDfTAbC48M%2Fk6%2BlanW836y4G8xhivngW%2B0yQB31DDkXS0TUzDx9kGG9TsaQvcMRI%2BWoRZ0MHG1kz709ZT9DhhbD2Uf8TYrmNma6UqxI%2BuY43jsO5D1xbKXID%2BE8hCO%2FjBKHiQgHDI0GRObM4OuMjQc7gjwUVmA7Vek1ij7OKfzaeoL8w4iprilcfeaEEl%2B1Pbqg1gAynS%2BuDs%2FCWwnYTyuWI%2BGRzGPexnBoPfBP%2FMmWD%2BvMfqYJ7flQmSEnWVJO19Pm384E5PHjnZ%2FtL21Z%2BQGQdxNswn0V9qxN27vL7H62%2B7YacVQBA%2Fn%2BJ9NKmIS0bfip8GrdXQGqzpAVgAFbmxsUzpa1DZwWkXLRpJKxYFHqFC1g1lFLnEQzpvetJ%2F4QUBANS%2BPo30KQiDCe2%2FKqBjqeAfzavoll06rheNCq%2FcWm3Gn%2Bpx9bVHSZtbrboSDAtDdX15j6p6NRUPd3Y%2Bv5yonxPRoKC3Z5%2B7%2FU7zur4Smfpd23NKmA5gRrwoBExUoCpGFTMcK%2BE9I3gGGgEI1Pg%2F7toTu1ZNFXuuYbVNaUNa3aI98kXVlVygM%2Fao6UmovqApkWYYodFLyc7XZj%2FJoN3%2B0YJktq6sPC7PCbqFJ39vCY&X-Amz-Credential=ASIA4PLBRHXVQTBTTCF2%2F20231121%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20231121T131617Z&X-Amz-Signature=9f5bf5fd3f483c46b14db30ec8b5e413b1c0f48b229eb2f0ddc42e4aa9fc4359",
+					"protocol": "https",
+					"host": [
+						"wetransfer-clone-temp",
+						"s3",
+						"eu-central-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"A715600D-A992-42FF-B692-6AB3D253B011Untitled-2.html"
+					],
+					"query": [
+						{
+							"key": "X-Amz-Algorithm",
+							"value": "AWS4-HMAC-SHA256"
+						},
+						{
+							"key": "X-Amz-SignedHeaders",
+							"value": "host%3Bx-amz-meta-receiver-email%3Bx-amz-meta-sender-email"
+						},
+						{
+							"key": "X-Amz-Meta-receiver-email",
+							"value": "hopehero3@hotmail.com",
+							"disabled": true
+						},
+						{
+							"key": "X-Amz-Meta-sender-email",
+							"value": "kahraman.umut@hotmail.com",
+							"disabled": true
+						},
+						{
+							"key": "X-Amz-Expires",
+							"value": "899"
+						},
+						{
+							"key": "X-Amz-Security-Token",
+							"value": "IQoJb3JpZ2luX2VjEL3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJHMEUCIFEboOudyPp4uoVsj6a5DXF05fLUUGivhRznLuNQF6HFAiEApdtJCpfkvNP%2BbGBhTIENkEnmui2A2q8M7vELspIDf6Uq1gMIFhAAGgw4NTc1ODc0MDAxNzEiDKmwqK%2Fy1Gd3mloqmyqzA5pjkPekti1IWwwmf%2BiJTCnfGdbGRZVswNmLHV6ZwLXGN23FRAefsy3AEj7gOA1qSw1BUcrxZXZm8ji68H2XR9bdRTk%2Bfl7u730S4ni5SXuZlQMbqZDmhtyzg8TBE20pFgOfmBLTZpoRBpe8zRY5qYoy4jky5XRjqEtHQrId%2BxDwC1uoDB5HfbpldyDfTAbC48M%2Fk6%2BlanW836y4G8xhivngW%2B0yQB31DDkXS0TUzDx9kGG9TsaQvcMRI%2BWoRZ0MHG1kz709ZT9DhhbD2Uf8TYrmNma6UqxI%2BuY43jsO5D1xbKXID%2BE8hCO%2FjBKHiQgHDI0GRObM4OuMjQc7gjwUVmA7Vek1ij7OKfzaeoL8w4iprilcfeaEEl%2B1Pbqg1gAynS%2BuDs%2FCWwnYTyuWI%2BGRzGPexnBoPfBP%2FMmWD%2BvMfqYJ7flQmSEnWVJO19Pm384E5PHjnZ%2FtL21Z%2BQGQdxNswn0V9qxN27vL7H62%2B7YacVQBA%2Fn%2BJ9NKmIS0bfip8GrdXQGqzpAVgAFbmxsUzpa1DZwWkXLRpJKxYFHqFC1g1lFLnEQzpvetJ%2F4QUBANS%2BPo30KQiDCe2%2FKqBjqeAfzavoll06rheNCq%2FcWm3Gn%2Bpx9bVHSZtbrboSDAtDdX15j6p6NRUPd3Y%2Bv5yonxPRoKC3Z5%2B7%2FU7zur4Smfpd23NKmA5gRrwoBExUoCpGFTMcK%2BE9I3gGGgEI1Pg%2F7toTu1ZNFXuuYbVNaUNa3aI98kXVlVygM%2Fao6UmovqApkWYYodFLyc7XZj%2FJoN3%2B0YJktq6sPC7PCbqFJ39vCY"
+						},
+						{
+							"key": "X-Amz-Credential",
+							"value": "ASIA4PLBRHXVQTBTTCF2%2F20231121%2Feu-central-1%2Fs3%2Faws4_request"
+						},
+						{
+							"key": "X-Amz-Date",
+							"value": "20231121T131617Z"
+						},
+						{
+							"key": "X-Amz-Signature",
+							"value": "9f5bf5fd3f483c46b14db30ec8b5e413b1c0f48b229eb2f0ddc42e4aa9fc4359"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
